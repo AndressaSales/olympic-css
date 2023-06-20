@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 51, 160);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+}
+.contener{
+    position: absolute;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contener .anel{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: -30px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    animation: animete 4s linear infinite;
+}
+@keyframes animete{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.contener .anel::before{
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    box-shadow: 0 0 10px whitesmoke,
+    0 0 30px whitesmoke,
+    0 0 50px whitesmoke;
+}
+.contener .anel:nth-child(2){
+    animation: ani 4s linear infinite;
+}
+@keyframes ani{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.contener .anel:nth-child(4){
+    animation: ani 4s linear infinite;
+}
+@keyframes ani{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.contener .anel:nth-child(5){
+    position: absolute;
+    top: -66.66px;
+}
+#a-1{
+    border-color: blue;
+    position: relative;
+    bottom: 70px;
+    right: 15px;
+}
+#a-2{
+    position: relative;
+    right: 25px;
+    border-color: yellow;
+    top: 15px;
+}
+#a-3{
+    position: relative;
+    border-color: black;
+    bottom: 70px;
+    right: 25px;
+}
+#a-4{
+    border-color: green;
+    position: relative;
+    right: 20px;
+}
+#a-5{
+    border-color: red;
+    position: relative;
+    right: 35px;
+}
+.contener p{
+    position: relative;
+    top: 150px;
+    right: 300px;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 0.2em; /*para separar*/
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-shadow: 0 0 20px whitesmoke,
+    0 0 40px whitesmoke,
+    0 0 60px whitesmoke;
+}
